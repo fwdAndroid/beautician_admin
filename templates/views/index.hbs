@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<!-- soccer/project/  07 Jan 2020 03:36:49 GMT -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+{{!-- <link rel="icon" href="favicon.ico" type="image/x-icon"/> --}}
+
+<title>Mobi Stylz </title>
+
+<!-- Bootstrap Core and vandor -->
+<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+
+<!-- Plugins css -->
+<link rel="stylesheet" href="plugins/charts-c3/c3.min.css"/>
+
+<!-- Core css -->
+
+<link rel="stylesheet" href="css/main.css"/>
+<link rel="stylesheet" href="css/theme1.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="font-montserrat">
+
+
+ 
+     {{>links}}
+
+    <div class="page">
+        <div id="page_top" class="section-body top_dark">
+            <div class="container-fluid">
+                <div class="page-header">
+                    <div class="left">
+                        <a href="javascript:void(0)" class="icon menu_toggle mr-3"><i class="fa  fa-align-left"></i></a>
+                        <h1 class="page-title">MobiStylez</h1>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body mt-3">
+            <div class="container-fluid">
+                <div class="row clearfix">
+                    <div class="col-lg-12">
+                        <div class="mb-4">
+                            <h4>Welcome Mobi Stylez Admin Panel</h4>
+                            <small>Here you can manage your both client and stylist app <a href="#">Learn More</a></small>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="row clearfix row-deck">
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                     <div class="card">
+                         <a href="/clients"> 
+                            <div class="card-header">
+                                <h3 class="card-title">Total Clients</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">31</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                              </a>
+                        </div>
+                      
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                            <a href="/stylist"> 
+                            <div class="card-header">
+                                <h3 class="card-title">Total Stylist</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">245</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                            
+                        </div>
+                         
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                             <a href="/payment"> 
+                            <div class="card-header">
+                                <h3 class="card-title">Total Earnings</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">17</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Appointment Request</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">12</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-6">
+                        <div class="card">
+                             <a href="/customersupport"> 
+                            <div class="card-header">
+                                <h3 class="card-title">Complains</h3>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="number mb-0 font-32 counter">19</h5>
+                                <span class="font-12">Measure How Fast... <a href="#">More</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="container-fluid">
+                <div class="row clearfix row-deck">
+                    <div class="col-xl-4 col-lg-12 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Transaction History</h3>
+                              
+                            </div>
+                            <table class="table card-table mt-2">
+                                <tbody>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar1.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Payment from #2583</span> <strong>$300</strong></p>
+                                            <span class="text-muted font-13">Feb 21, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar2.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Payment from #1245</span> <strong>$1200</strong></p>
+                                            <span class="text-muted font-13">March 14, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar3.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Payment from #8596</span> 
+                                            <strong>$780</strong></p>
+                                            <span class="text-muted font-13">March 18, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar4.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Payment from #1526</span> <strong>$841</strong></p>
+                                            <span class="text-muted font-13">April 27, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar5.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Payment from #4859</span> <strong>$235</strong></p>
+                                            <span class="text-muted font-13">March 18, 2019</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>                        
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Client List</h3>
+                            </div>
+
+                            <div class="table-responsive">
+                                  <table class="table card-table mt-2">
+                                <tbody>
+
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar1.jpg" alt="Avatar"></td>
+                                        <td>
+                                           <a href="/clients"><p class="mb-0 d-flex justify-content-between"><span>Hasseb Ahmed</span></p></a>
+                                            <span class="text-muted font-13">Feb 21, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar2.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Junaid Ansari</span>
+                                            <span class="text-muted font-13">March 14, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar3.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Adeel Khan</span> 
+                                            
+                                            <span class="text-muted font-13">March 18, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar4.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Rabia Anwar</span> 
+                                            <span class="text-muted font-13">April 27, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar5.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Rameez Ahmed</span> 
+                                            <span class="text-muted font-13">March 18, 2019</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Stylist List</h3>
+                            
+                            </div>
+                        
+                            <div class="table-responsive">
+                                <table class="table table-striped table-vcenter mb-0">
+                                    <tbody>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar1.jpg" alt="Avatar"></td>
+                                        <td>
+                                           <a href="/stylist"><p class="mb-0 d-flex justify-content-between"><span>Hasseb Ahmed</span></p></a>
+                                            <span class="text-muted font-13">Feb 21, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar2.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Junaid Ansari</span>
+                                            <span class="text-muted font-13">March 14, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar3.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Adeel Khan</span> 
+                                            
+                                            <span class="text-muted font-13">March 18, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar4.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Rabia Anwar</span> 
+                                            <span class="text-muted font-13">April 27, 2019</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="w60"><img class="avatar" src="images/xs/avatar5.jpg" alt="Avatar"></td>
+                                        <td>
+                                            <p class="mb-0 d-flex justify-content-between"><span>Rameez Ahmed</span> 
+                                            <span class="text-muted font-13">March 18, 2019</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="row clearfix">
+                    <div class="col-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Payment Summary</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-striped text-nowrap table-vcenter mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Stylist Name</th>
+                                                <th>Stylist Total</th>
+                                                <th>Payment</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Sean Black</td>
+                                                <td>$14,500</td>
+                                                <td>Done</td>
+                                                <td><span class="tag tag-success">Delivered</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sean Black</td>
+                                                <td>$14,500</td>
+                                                <td>Pending</td>
+                                                <td><span class="tag tag-success">Delivered</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Merri Diamond</td>
+                                                <td>$500</td>
+                                                <td>Done</td>
+                                                <td><span class="tag tag-orange">Submit</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sean Black</td>
+                                                <td>$1,500</td>
+                                                <td>Done</td>
+                                                <td><span class="tag tag-success">Delivered</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Allen Collins</td>
+                                                <td>$9,500</td>
+                                                <td>Done</td>
+                                                <td><span class="tag tag-success">Delivered</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <div class="section-body">
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-lg-12">
+                            <a href="/">Mobo Stylz</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>    
+</div>
+
+
+<script src="bundles/lib.vendor.bundle.js"></script>
+
+<script src="bundles/apexcharts.bundle.js"></script>
+<script src="bundles/counterup.bundle.js"></script>
+<script src="bundles/knobjs.bundle.js"></script>
+<script src="bundles/c3.bundle.js"></script>
+
+<script src="js/core.js"></script>
+<script src="js/page/project-index.js"></script>
+</body>
+
+<!-- soccer/project/  07 Jan 2020 03:37:22 GMT -->
+</html>
