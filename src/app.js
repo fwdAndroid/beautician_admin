@@ -42,12 +42,16 @@ app.get('/payment', (req, res) => res.render('payment'));
 app.get('/appointments', (req, res) => res.render('appointments'));
 app.get('/pastappointments', (req, res) => res.render('oldappointments'));
 app.get('/approvals', (req, res) => res.render('approvals'));
-
-
-
 app.get('/paymentrecipt', (req, res) => res.render('paymentrecipt'));
-
 app.get('/blockcontacts', (req, res) => res.render('blockcontacts'));
+
+//Authentications Routes
+app.get('/login', (req, res) => res.render('login'));
+app.get('/register', (req, res) => res.render('register'));
+
+
+
+
 
 
 app.listen(port, () => console.log(`Example app listening on port port!`))
