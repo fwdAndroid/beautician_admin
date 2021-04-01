@@ -44,6 +44,8 @@ app.get('/pastappointments', (req, res) => res.render('oldappointments'));
 app.get('/approvals', (req, res) => res.render('approvals'));
 app.get('/paymentrecipt', (req, res) => res.render('paymentrecipt'));
 app.get('/blockcontacts', (req, res) => res.render('blockcontacts'));
+app.get('/adminapproved', (req, res) => res.render('adminapproved'));
+
 
 //Authentications Routes
 app.get('/login', (req, res) => res.render('login'));
