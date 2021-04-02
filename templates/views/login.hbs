@@ -1,66 +1,46 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="css/auth.css"  rel="stylesheet"/>
+<!------ Include the above in your HEAD tag ---------->
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome To MobiStylez</h3>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Login Form</h3>
+                                <form action="/login" method="POST">
+                                 <div class="row register-form">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" placeholder="Your Email *" value="" required name="email"/>
+                                        </div>
+                                      
+                                      <div class="form-group">
+                                            <input type="password" class="form-control" placeholder="Password *" value="" required name="password"/>
+                                        </div>
+                                         
+                                            
+                                    </div>
+                                    <div class="col-md-12">
+                                    <button type="submit" class="btnLogin btn btn-primary me-2" value="Login" style="margin: 10px;"/>Login</button>   
+                                    </div>
+                                      <div class="text-center text-muted col-md-12" style="padding: 10px;">
+                                       Dont Have Account <a href="/register">Register Here</a>
+                                        </div>
+                                    
+                                </div>
 
-<!doctype html>
-<html lang="en" dir="ltr">
+                                </form>
 
-<!-- soccer/project/login.html  07 Jan 2020 03:42:43 GMT -->
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-<link rel="icon" href="favicon.ico" type="image/x-icon"/>
-
-<title>Login</title>
-
-<!-- Bootstrap Core and vandor -->
-<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
-
-<!-- Core css -->
-<link rel="stylesheet" href="css/main.css"/>
-<link rel="stylesheet" href="css/theme1.css"/>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-</head>
-<body class="font-montserrat">
-
-<div class="auth">
-    <div class="auth_left">
-        <div class="card">
-            <div class="text-center mb-2">
-              <i class="fa fa-soccer-ball-o brand-logo"></i>
             </div>
-            <div class="card-body">
-                <div class="card-title">Login to your account</div>
-               
-                <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                </div>
-                <div class="form-group">
-                    <label class="form-label">Password<a href="/forgot-password" class="float-right small">I forgot password</a></label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                </div>
-                <div class="form-group">
-                    <label class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" />
-                    <span class="custom-control-label">Remember me</span>
-                    </label>
-                </div>
-                <div class="form-footer">
-                    <a href="/" class="btn btn-primary btn-block" title="">Sign in</a>
-                </div>
-            </div>
-            <div class="text-center text-muted">
-                Don't have account yet? <a href="/register">Sign up</a>
-            </div>
-        </div>        
-    </div>
-    <div class="auth_right full_img"></div>
-</div>
-
-<script src="bundles/lib.vendor.bundle.js"></script>
-<script src="js/core.js"></script>
-</body>
-
-<!-- soccer/project/login.html  07 Jan 2020 03:42:43 GMT -->
-</html>

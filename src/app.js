@@ -3,7 +3,7 @@ const app = express()
 const path = require('path');
 const hbs = require('hbs');
 require("../src/db/conn");
-require('../src//models/register')
+const User = require('../src//models/register')
 
 
 const port = 3000
@@ -26,8 +26,10 @@ hbs.registerPartials('templates/partials');
 
 
 
-//Routes
-app.get('/', (req, res) => res.render('index'));
+//First Opening Routes
+app.get('/', (req, res) => res.render('login'));
+
+//Normal ROutes
 app.get('/dashboard', (req, res) => res.render('index'));
 app.get('/stylist', (req, res) => res.render('stylish'));
 app.get('/clients', (req, res) => res.render('clients'));
@@ -51,6 +53,64 @@ app.get('/adminapproved', (req, res) => res.render('adminapproved'));
 app.get('/login', (req, res) => res.render('login'));
 app.get('/register', (req, res) => res.render('register'));
 
+
+
+
+//Registration Post
+app.post('/register', async(req, res) => {
+
+    try {
+        const password = req.body.password;
+        const confirmpassword = req.body.confirmpassword;
+        if (password === confirmpassword) {
+
+
+
+            const registerEmp = User({
+                firstname: req.body.firstname,
+                lastname: req.body.lastname,
+                email: req.body.email,
+                password: password,
+                confirmpassword: confirmpassword
+
+            })
+
+            const registered = await registerEmp.save();
+            res.status(201).render('login');
+            console.log(registered);
+
+
+        } else {
+            res.send("Unmatched Passwrd");
+        }
+    } catch (err) {
+        res.status(400).send(err);
+        console.log(err);
+
+    }
+
+})
+
+
+//login Post
+app.post('/login', async(req, res) => {
+
+    try {
+
+        const email = req.body.email;
+        const password = req.body.password;
+        const useremail = await User.findOne({ email: email });
+
+        if (useremail.password === password) {
+            console.log(`${email} and password is ${password}`);
+            res.render('index');
+        }
+    } catch (err) {
+        res.status(400).send(err);
+        console.log(err);
+    }
+
+});
 
 
 

@@ -3,13 +3,20 @@ const validator = require('validator')
 
 
 const userSchema = mongoose.Schema({
-    name: {
+    firstname: {
         type: String,
-        required: true,
-        minlength: 3
+        minlength: 3,
+        required: true
+
+    },
+    lastname: {
+        type: String,
+        minlength: 3,
+        required: true
     },
     email: {
         type: String,
+        unique: true,
         required: true,
         trim: true,
         lowercase: true,
@@ -20,7 +27,20 @@ const userSchema = mongoose.Schema({
             }
         }
 
+    },
+
+    password: {
+        type: String,
+        required: true
+
+    },
+    confirmpassword: {
+        type: String,
+        required: true
+
     }
+
+
 });
 
 //Collection Name
