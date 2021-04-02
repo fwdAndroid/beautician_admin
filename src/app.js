@@ -51,45 +51,45 @@ app.get('/adminapproved', (req, res) => res.render('adminapproved'));
 
 //Authentications Routes
 app.get('/login', (req, res) => res.render('login'));
-app.get('/register', (req, res) => res.render('register'));
+// app.get('/register', (req, res) => res.render('register'));
 
 
 
 
-//Registration Post
-app.post('/register', async(req, res) => {
+// //Registration Post
+// app.post('/register', async(req, res) => {
 
-    try {
-        const password = req.body.password;
-        const confirmpassword = req.body.confirmpassword;
-        if (password === confirmpassword) {
-
-
-
-            const registerEmp = User({
-                firstname: req.body.firstname,
-                lastname: req.body.lastname,
-                email: req.body.email,
-                password: password,
-                confirmpassword: confirmpassword
-
-            })
-
-            const registered = await registerEmp.save();
-            res.status(201).render('login');
-            console.log(registered);
+//     try {
+//         const password = req.body.password;
+//         const confirmpassword = req.body.confirmpassword;
+//         if (password === confirmpassword) {
 
 
-        } else {
-            res.send("Unmatched Passwrd");
-        }
-    } catch (err) {
-        res.status(400).send(err);
-        console.log(err);
 
-    }
+//             const registerEmp = User({
+//                 firstname: req.body.firstname,
+//                 lastname: req.body.lastname,
+//                 email: req.body.email,
+//                 password: password,
+//                 confirmpassword: confirmpassword
 
-})
+//             })
+
+//             const registered = await registerEmp.save();
+//             res.status(201).render('login');
+//             console.log(registered);
+
+
+//         } else {
+//             res.send("Unmatched Passwrd");
+//         }
+//     } catch (err) {
+//         res.status(400).send(err);
+//         console.log(err);
+
+//     }
+
+// })
 
 
 //login Post
