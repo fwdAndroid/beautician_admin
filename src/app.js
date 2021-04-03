@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const path = require('path');
 const hbs = require('hbs');
+
 require("../src/db/conn");
 const User = require('../src//models/register')
 
