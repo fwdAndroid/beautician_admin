@@ -44,6 +44,7 @@ app.get('/access', (req, res) => res.render('access'));
 app.get('/payment', (req, res) => res.render('payment'));
 app.get('/appointments', (req, res) => res.render('appointments'));
 app.get('/pastappointments', (req, res) => res.render('oldappointments'));
+app.get('/upappointments', (req, res) => res.render('upappointments'));
 app.get('/approvals', (req, res) => res.render('approvals'));
 app.get('/paymentrecipt', (req, res) => res.render('paymentrecipt'));
 app.get('/blockcontacts', (req, res) => res.render('blockcontacts'));
